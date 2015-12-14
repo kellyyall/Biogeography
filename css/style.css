@@ -2,27 +2,10 @@
 .img-responsive{
 	background-position:fixed;
 	background-repeat: no-repeat;
-
-
-}
-.wrapper{
-    position: relative;
-    width:100%; 
-    padding:0px;
-    text-align: center;
-
 }
 
-.text{
-    background-color:#20B2AA;
-    bottom: 50%;
-    color: #000;
-
-    left: 20%;
-    right:20%;
-    opacity: 0.7;
-    position: absolute;
-
+.intro{
+	color:#26A65B;
 }
 
 .title{
@@ -41,8 +24,4 @@ img{
 .right{
 
     padding-bottom: 30%;
-}
-
-section{
-    background:white;
 }
