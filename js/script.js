@@ -1,5 +1,4 @@
 $(function() {
-
 new WOW().init();
 $('#map').height($('.loc').height);
 	$('section :first-child').each(function(){
@@ -20,6 +19,8 @@ $('#map').height($('.loc').height);
         var map = new google.maps.Map(mapCanvas, mapOptions);
       }
       google.maps.event.addDomListener(window, 'load', initialize);
+
+
 });
 
 
