@@ -5,7 +5,7 @@ $('#map').height($('.loc').height);
 		$(this).addClass("title");
 	});
 
-	$('section :nth-child(3n) ').each(function(){
+	$('section :nth-child(3) ').each(function(){
 		$(this).addClass("title");
 	});
 
