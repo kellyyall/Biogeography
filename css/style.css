@@ -1,3 +1,7 @@
+body*{
+	font-family: 'Raleway', sans-serif;
+}
+
 img{
 	padding-top:2%;
 }
@@ -14,6 +18,7 @@ img{
 
 .title{
     text-align: center;
+    font-family: 'Oxygen', sans-serif;
 }
 
 
@@ -31,9 +36,12 @@ img{
 }
 
 li{
-
 	font-size: 1.4em;
-	font-family:;
+}
+
+ul#ref{
+	font-size:0.8em;
+	opacity: 0.8;
 }
 
 #footer{
@@ -42,4 +50,8 @@ li{
 	padding-top: 5%;
 	padding-bottom:5%;
 	opacity: 0.8;
+}
+
+span#refer{
+	color:blue;
 }

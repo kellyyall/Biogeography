@@ -1,6 +1,16 @@
 $(function() {
-new WOW().init();
-$('#map').height($('.loc').height);
+  var refNum;
+  var refContents;
+  //refNum = $().text();
+  $('span#refer').each(function(){
+    refNum = parseInt($(this).text());
+    refContents = $('#ref li').eq(refNum-1).text();
+    $(this).attr("title", refContents );
+  });
+  $('[data-toggle="tooltip"]').tooltip();
+
+  new WOW().init();
+  $('#map').height($('.loc').height);
 	$('section :first-child').each(function(){
 		$(this).addClass("title");
 	});
