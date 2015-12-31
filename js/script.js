@@ -1,15 +1,14 @@
 $(function() {
   var refNum;
   var refContents;
-  //refNum = $().text();
+
   $('span#refer').each(function(){
-    refNum = parseInt($(this).text());
+    refNum = parseInt($(this).text()[1]);
     refContents = $('#ref li').eq(refNum-1).text();
     $(this).attr("title", refContents );
   });
   $('[data-toggle="tooltip"]').tooltip();
 
-  new WOW().init();
   $('#map').height($('.loc').height);
 	$('section :first-child').each(function(){
 		$(this).addClass("title");
@@ -19,22 +18,16 @@ $(function() {
 		$(this).addClass("title");
 	});
 
-	function initialize() {
-        var mapCanvas = document.getElementById('map');
-        var mapOptions = {
-          center: new google.maps.LatLng(-41.5591743,145.8636745),
-          zoom: 8,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(mapCanvas, mapOptions);
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
+  map = new GMaps({
+        el: '#map',
+        lat: -41.5591743,
+        lng: 145.8636745,
+        zoom: 9
+      });
+  map.addMarker({
+        lat: -41.5591743,
+        lng: 145.8636745,
+      });
 
 
 });
-
-
-
-
-
-
